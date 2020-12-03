@@ -11,8 +11,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #001821;
-  background-image: url(../img/elephant.png),
-                      url(../img/sunset.png);
+  background-image: url(/air-asia/img/elephant.png),
+                      url(/air-asia/img/sunset.png);
   background-repeat: no-repeat;
   background-position: 0 0, 0 1872px;
   height: 2700px;
@@ -48,9 +48,6 @@ body {
           .menu__list {
             list-style: none;
             display: inline-block;
-            /* position: absolute;
-            top: 38px;
-            left: 555px; */
           }
 
             .menu__item {
@@ -220,11 +217,11 @@ body {
         }
 
         .plain {
-          background-image: url(../img/plain.png);
+          background-image: url(/air-asia/img/plain.png);
         }
 
         .serf {
-          background-image: url(../img/surfer.png);
+          background-image: url(/air-asia/img/surfer.png);
         }
 
         .news__item:nth-child(1) {
@@ -245,9 +242,6 @@ body {
             }
 
             .news__text {
-              /* display: block;
-              width: 485px;
-              height: 50px; */
               margin-top: 3px;
               font-size: 16px;
             }
@@ -310,7 +304,7 @@ body {
     }
 
       .about__contetnt {
-        background-image: url(../img/mountains.png);
+        background-image: url(/air-asia/img/mountains.png);
         position: absolute;
         width: 785px;
         height: 455px;
