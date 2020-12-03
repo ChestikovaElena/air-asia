@@ -11,8 +11,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #001821;
-  background-image: url(/air-asia/img/elephant.png),
-                      url(/air-asia/img/sunset.png);
+  background-image: url(../img/elephant.png),
+                      url(../img/sunset.png);
   background-repeat: no-repeat;
   background-position: 0 0, 0 1872px;
   height: 2700px;
