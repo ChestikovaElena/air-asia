@@ -6,7 +6,6 @@
 
 body {
   font: 400 14px/1.42 'Open Sans', Arial, sans-serif;
-  line-height: 1.42;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,19 +14,25 @@ body {
                       url(../img/sunset.png);
   background-repeat: no-repeat;
   background-position: 0 0, 0 1872px;
-  height: 2700px;
   width: 1920px;
 }
 
+a {
+  color: inherit;
+}
+
+ul li {
+  list-style: none;
+}
+
   .wrapper {
-    width: 1140px;
+    width: 1143px;
     display: block;
     margin: 0 auto;
   }
 
     .header {
       margin-top: 30px;
-      width: 1140px;
       display: inline-block;
       vertical-align: top;
     }
@@ -41,31 +46,38 @@ body {
         .menu {
           display: inline-block;
           vertical-align: top;
-          margin: 12px 0 0 75px;
+          margin: 10px 0 0 78px;
           width: 265px;
         }
 
           .menu__list {
-            list-style: none;
             display: inline-block;
+            vertical-align: middle;
           }
 
             .menu__item {
               display: inline-block;
             }
 
+            .menu__item--active .menu__link {
+              color: #F5170E;
+            }
+
             .menu__item:nth-child(2) {
-              padding: 0 50px;
+              padding: 0 51px;
             }
 
               .menu__link {
                 text-decoration: none;
-                color: #fff;
+              }
+
+              .menu__link:hover {
+                color: #F5170E;
               }
 
         .contacts {
           display: inline-block;
-          vertical-align: top;
+          text-align: right;
           margin-left: 512px;
           width: 195px;
         }
@@ -75,46 +87,54 @@ body {
             text-decoration: none;
             color: #fff;
             font-size: 26px;
-            display: block;
-            width: 191px;
+            line-height: 1;
           }
 
           .contacts__workhours {
             display: inline-block;
-            margin-left: 93px;
             font-size: 13px;
+          }
+
+          .contacts__workhours:hover {
+            text-decoration: underline;
+            cursor: pointer;
           }
 
     .description {
       display: block;
-      margin-top: 110px;
+      margin-top: 118px;
+      width: 510px;
     }
 
       .description__title {
         font-size: 72px;
         font-weight: 700;
-        width: 510px;
-        height: 197px;
       }
 
       .description__slogan {
         font-size: 18px;
-        margin-top: 27px;
+        margin-top: 20px;
       }
 
       .button {
-        width: 168px;
-        height: 55px;
-        background: #F5170E;
         border-radius: 35px;
         border: none;
         font-size: 14px;
+        font-weight: 700;
         text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .button--color--red {
+        margin-top: 30px;
+        padding: 20px 40px;
+        background: #F5170E;
         color: #fff;
       }
 
-      .description__button {
-        margin-top: 30px;
+      .button--color--red:hover {
+        background:  #DA0100;
+        color: #fff;
       }
 
     .tours {
@@ -134,13 +154,13 @@ body {
       .tours__list {
         margin-top: 50px;
         width: 1150px;
-        list-style: none;
       }
 
         .tours__item {
           display: inline-block;
           width: 362px;
           background-color: #fff;
+          border-radius: 5px;
           color: #303030;
         }
 
@@ -173,28 +193,27 @@ body {
 
               .condition__desc-count {
                 font-size: 16px;
-                line-height: 1.36;
               }
 
           .tours__text {
             margin: 18px 16px 5px 22px;
+            line-height: 1.5;
           }
 
-          .tours__button {
-            margin: 24px 0 26px 24px;
-            width: 135px;
-            color: #F5170E;
-            background-color: #fff;
+          .button--color--white {
+            margin: 20px 0 26px 24px;
+            padding: 18px 28px;
+            background: #fff;
+            color:#F5170E;
             border: 1px solid #F5170E;
           }
-
-          .tours__button:focus {
+    
+          .button--color--white:hover {
+            background: #F5170E;
             color: #fff;
-            background-color: #F5170E;
           }
 
     .news {
-      display: block;
       margin-top: 127px;
     }
 
@@ -205,23 +224,21 @@ body {
 
       .news__list {
         margin-top: 50px;
-        width: 1150px;
-        list-style: none;
-        font-size: 0;
       }
 
         .news__item {
           display: inline-block;
+          border-radius: 5px;
           width: 557px;
-          height: 394px;
+          vertical-align: top;
         }
 
         .plain {
-          background-image: url(/air-asia/img/plain.png);
+          background-image: url(../img/plain.png);
         }
 
         .serf {
-          background-image: url(/air-asia/img/surfer.png);
+          background-image: url(../img/surfer.png);
         }
 
         .news__item:nth-child(1) {
@@ -242,33 +259,35 @@ body {
             }
 
             .news__text {
-              margin-top: 3px;
+              width: 483px;
+              margin-bottom: 20px;
               font-size: 16px;
+              line-height: 1.5;
+              min-height: 50px;
             }
 
       .pagination {
-        margin: 52px 0 0 380px;
-        width: 700px;
+        display: block;
+        margin: 53px auto 0;
+        width: 395px;
+        text-align: center;
       }
 
-        .pagination__display{
-          display: inline;
+        .pagination__display, .pagination__list {
+          display: inline-block;
+          vertical-align: middle;
           font-size: 16px;
           line-height: 2;
         }
 
-        .pagination__list {
-          list-style: none;
-          display: inline;
+        .pagination__display {
+          margin-right: 25px;
         }
 
           .pagination__item {
             display: inline-block;
-            margin-right: 20px;
-          }
-
-          .pagination__item:nth-child(1) {
-            margin-left: 23px;
+            vertical-align: middle;
+            margin-right: 5px;
           }
 
           .pagination__item:nth-child(7) {
@@ -276,25 +295,31 @@ body {
           }
 
           .item__active {
-            margin-right: 10px;
             width: 32px;
             height: 32px;
             border-radius: 50%;
             background-color: #fff;
           }
 
-            .pagination__link {
-              text-decoration: none;
-              font-size: 16px;
-              line-height: 21px;
-              font-weight: 700;
-              color: #fff;
-            }
+          .item__active .pagination__link {
+            color: #F5170E;
+            background-color: #fff;
+            display: block;
+            width: 32px;
+            height: 32px;
+            line-height: 2;
+            text-align: center;
+          }
 
-            .link__active {
-              color: #F5170E;
-              line-height: 32px;
-              padding: 0 10px;
+            .pagination__link {
+              display: block;
+              width: 24px;
+              height: 24px;
+              line-height: 1.5;
+              border-radius: 50%;
+              position: relative;
+              text-decoration: none;
+              font-weight: 700;
             }
 
     .about {
@@ -303,64 +328,124 @@ body {
       height: 552px;
     }
 
+      .about__img {
+        display: inline-block;
+        vertical-align: top;
+        border-radius: 5px;
+      }
+
       .about__contetnt {
-        background-image: url(/air-asia/img/mountains.png);
-        position: absolute;
+        display: inline-block;
+        vertical-align: top;
+        background-image: url(../img/mountains.png);
+        border-radius: 5px;
         width: 785px;
-        height: 455px;
-        top: 2272px;
-        left: 743px;
+        height: min-455px;
+        margin-left: -140px;
+        margin-top: 97px;
       }
 
         .about__title {
-          margin: 70px 0 0 80px;
+          margin: 70px 0 0 82px;
           font-size: 36px;
           font-weight: 700;
         }
 
-        .about__text {
-          margin: 35px 0 0 80px;
+        .about__text{
+          margin: 35px 0 0 82px;
           width: 500px;
           font-size: 16px;
           line-height: 1.69;
         }
 
-        .about__button {
-          margin: 43px 0 0 80px;
+        .about__contetnt .button--color--red {
+          margin: 43px 0 65px 82px;
         }
 
     .footer {
-      margin-top: 100px;
-      margin-bottom: 60px;
-      width: 1140px;
+      display: block;
+      margin-top: 55px;
+      margin-bottom: 55px;
+      width: 1145px;
+      height: 93px;
     }
+
+      .line {
+        width: 1142px;
+        height: 1px;
+        background: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.1;
+        margin-bottom: 50px;
+      }
 
       .socials {
         display: inline-block;
+        vertical-align: top;
         margin-left: 270px;
       }
 
         .socials__list {
           display: inline-block;
-          list-style: none;
         }
 
         .socials__item {
           display: inline-block;
+          vertical-align: top;
           margin-right: 5px;
         }
 
-        .socials__item:nth-child(4) {
+        .socials__item:last-child {
           margin-right: 0;
         }
 
-    .footer .contacts {
-      margin-left: 68px;
-    }
+          .socials__link {
+            display: block;
+            text-decoration: none;
+            width: 36px;
+            height: 36px;
+            background: center center no-repeat;
+          }
 
-      .contacts__text {
-        margin-left: 32px;
-        font-size: 11px;
-        line-height: 1.8;
+          .socials__item--icon--telegram .socials__link {
+            background-image: url('../img/telegram.png');
+          }
+
+          .socials__item--icon--telegram .socials__link:hover {
+            background-image: url('../img/telegram-hover.png');
+          }
+
+          .socials__item--icon--vk .socials__link {
+            background-image: url('../img/vk.png');
+          }
+
+          .socials__item--icon--vk .socials__link:hover {
+            background-image: url('../img/vk-hover.png');
+          }
+
+          .socials__item--icon--facebook .socials__link {
+            background-image: url('../img/facebook.png');
+          }
+
+          .socials__item--icon--facebook .socials__link:hover {
+            background-image: url('../img/facebook-hover.png');
+          }
+
+          .socials__item--icon--instagram .socials__link {
+            background-image: url('../img/instagram.png');
+          }
+
+          .socials__item--icon--instagram .socials__link:hover {
+            background-image: url('../img/instagram-hover.png');
+          }
+    
+      .footer .contacts {
+        margin-left: 68px;
+        line-height: 1;
       }
+
+        .contacts__text {
+          font-size: 11px;
+          line-height: 1.5;
+        }
 
