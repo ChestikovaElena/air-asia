@@ -16,7 +16,7 @@ body {
                       url(../img/bg/sunset.jpg);
   background-repeat: no-repeat;
   background-position: 0 0, 0 1872px;
-  width: 1920px;
+  margin: 0;
 }
 
 a {
@@ -39,46 +39,47 @@ h1, h2, h3, p {
 }
 
   .wrapper {
-    width: 1155px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .conteiner {
+    width: 1140px;
     display: block;
     margin: 0 auto;
   }
 
     .header {
-      width: 100%;
-      display: inline-block;
-      margin-top: 22px;
-      vertical-align: top;
+      padding-top: 30px;
+      position: relative;
+      min-height: 120px;
     }
 
     .logo {
-      display: inline-block;
-      vertical-align: top;
-      width: 85px;
+      position: absolute;
     }
 
         .menu {
-          display: inline-block;
-          vertical-align: top;
-          padding-left: 75px;
-          line-height: 2.57;
+          position: absolute;
+          left: 165px;
+          line-height: 3;
         }
 
           .menu__list {
             display: inline-block;
-            vertical-align: middle;
           }
 
             .menu__item {
               display: inline-block;
+              margin-right: 50px;
+            }
+
+            .menu__item:last-child {
+              margin-right: 0;
             }
 
             .menu__item--active .menu__link {
               color: #F5170E;
-            }
-
-            .menu__item:nth-child(2) {
-              padding: 0 51px;
             }
 
               .menu__link {
@@ -90,21 +91,22 @@ h1, h2, h3, p {
               }
 
         .contacts {
-          display: inline-block;
-          text-align: end;
-          width: 710px;
+          position: absolute;
+          text-align: right;
+          right: 0;
+          width: 191px;
         }
 
           .contacts__phone {
             display: inline-block;
             text-decoration: none;
-            color: #fff;
             font-size: 26px;
             line-height: 1;
           }
 
           .contacts__workhours {
-            display: block;
+            display: inline-block;
+            text-align: end;
             font-size: 13px;
           }
 
@@ -114,8 +116,7 @@ h1, h2, h3, p {
           }
 
     .description {
-      display: block;
-      margin-top: 118px;
+      margin-top: 75px;
       width: 510px;
     }
 
@@ -151,8 +152,8 @@ h1, h2, h3, p {
       }
 
       .button--type--secondary {
-        margin: 20px 0 26px 24px;
-        padding: 18px 28px;
+        margin-top: 25px;
+        padding: 17px 30px;
         background-color: #fff;
         color:#F5170E;
       }
@@ -178,59 +179,63 @@ h1, h2, h3, p {
 
       .tours__list {
         margin-top: 50px;
-        width: 1150px;
       }
 
         .tours__item {
           display: inline-block;
           vertical-align: top;
+          margin-right: 23px;
           width: 362px;
           background-color: #fff;
           border-radius: 5px;
           color: #303030;
         }
 
-        .tours__item:nth-child(2) {
-          margin: 0 23px;
+        .tours__item:last-child {
+          margin-right: 0;
         }
 
-          .tours__item-title {
-            font-size: 24px;
-            font-weight: 700;
-            color: #000;
-            padding: 30px 0 0 22px;
+          .tours__wrapper {
+            padding: 30px 0 25px 20px;
           }
 
-          .condition {
-            padding: 20px 0 0 25px;
-          }
-
-            .condition__desc {
-              display: inline-block;
+            .tours__item-title {
+              font-size: 24px;
+              font-weight: 700;
+              color: #000;
             }
 
-            .condition__desc:nth-child(1) {
-              padding-right: 22px;
+            .condition {
+              padding-top: 20px;
             }
 
-              .condition__desc-icon {
-                padding-right: 5px;
+              .condition__desc {
+                display: inline-block;
+                padding-right: 28px;
               }
 
-              .condition__desc-count {
-                vertical-align: top;
-                font-size: 16px;
-                line-height: 1.36;
+              .condition__desc:last-child {
+                padding-right: 0;
               }
 
-          .tours__text {
-            padding: 18px 16px 5px 22px;
-            line-height: 1.5;
-          }
+                .condition__desc-icon {
+                  padding-right: 8px;
+                }
+
+                .condition__desc-count {
+                  vertical-align: top;
+                  font-size: 16px;
+                  line-height: 1.36;
+                }
+
+            .tours__text {
+              padding-top: 18px;
+              line-height: 1.5;
+            }
 
     .news {
       margin-top: 127px;
-      width: 1140px;
+      /* width: 1140px; */
     }
 
       .news__title {
@@ -246,6 +251,7 @@ h1, h2, h3, p {
           display: inline-block;
           border-radius: 5px;
           width: 557px;
+          height: 394px;
           vertical-align: top;
         }
 
@@ -257,12 +263,19 @@ h1, h2, h3, p {
           background-image: url(../img/content/surfer.jpg);
         }
 
-        .news__item:nth-child(1) {
-          margin-right: 18px;
+        .news__item {
+          margin-right: 20px;
+          position: relative;
+        }
+
+        .news__item:last-child {
+          margin-right: 0;
         }
 
           .news__content {
-            padding: 252px 45px 20px 28px;
+            position: absolute;
+            bottom: 25px;
+            left: 30px;
           }
             .news__date {
               font-size: 14px;
@@ -282,7 +295,7 @@ h1, h2, h3, p {
             }
 
       .pagination {
-        margin-top: 55px;
+        margin-top: 50px;
         text-align: center;
       }
 
@@ -337,6 +350,7 @@ h1, h2, h3, p {
 
     .about {
       margin-top: 145px;
+      margin-bottom: 55px;
       height: 552px;
     }
 
@@ -354,30 +368,31 @@ h1, h2, h3, p {
         width: 785px;
         margin-left: -140px;
         margin-top: 97px;
+        padding-left: 80px;
+        padding-bottom: 65px;
       }
 
         .about__title {
-          margin: 70px 0 0 80px;
+          margin-top: 70px;
           font-size: 36px;
           font-weight: 700;
         }
 
         .about__text{
-          margin: 35px 0 0 80px;
+          margin-top: 35px;
           width: 500px;
           font-size: 16px;
           line-height: 1.69;
         }
 
         .button--about {
-          margin: 40px 0 65px 80px;
+          margin-top: 43px;
         }
 
     .footer {
-      display: block;
-      margin-top: 55px;
-      margin-bottom: 55px;
-      height: 93px;
+      padding-bottom: 55px;
+      height: 146px;
+      position: relative;
     }
 
       .line {
@@ -390,51 +405,50 @@ h1, h2, h3, p {
       }
 
       .socials {
-        display: inline-block;
-        vertical-align: top;
-        margin-left: 270px;
+        position: absolute;
+        right: 275px;
       }
-
-        .socials__list {
-          display: inline-block;
-        }
 
         .socials__item {
           display: inline-block;
-          vertical-align: top;
-          margin-right: 5px;
+          position: relative;
+          margin-right: 45px;
         }
 
         .socials__item:last-child {
           margin-right: 0;
         }
 
-          .socials__link {
-            display: block;
-            text-decoration: none;
-            width: 36px;
-            height: 36px;
-            background-color: #454545;
-            border-radius: 50%;
-            background: center center no-repeat;
-          }
+        .socials__link:before {
+          content: " ";
+          display: inline-block;
+          background: center center no-repeat;
+          block-size: cover;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 36px;
+          height: 36px;
+        }
 
-          .socials__item--icon--telegram .socials__link {
+          .socials__link--telegram:before {
             background-image: url('../img/icons/telegram.png');
           }
 
-          .socials__item--icon--vk .socials__link {
+          .socials__link--vk:before {
             background-image: url('../img/icons/vk.png');
           }
 
-          .socials__item--icon--facebook .socials__link {
+          .socials__link--facebook:before {
             background-image: url('../img/icons/facebook.png');
           }
 
-          .socials__item--icon--instagram .socials__link {
+          .socials__link--instagram:before {
             background-image: url('../img/icons/instagram.png');
           }
-
+          
           .socials__link:hover:hover {
             filter: invert(.5);
           }
