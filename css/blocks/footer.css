@@ -1,0 +1,32 @@
+.footer {
+  position: relative;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer:before {
+  display: block;
+  width: 1142px;
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #fff;
+  opacity: 0.1;
+  top: 0;
+}
+
+.footer__col {
+  display: flex;
+  align-items: center;
+}
+
+.footer__col--align--right {
+  align-items: flex-end;
+}
+
+.footer--services {
+  padding-top: 48px;
+  padding-bottom: 42px;
+  height: 132px;
+}

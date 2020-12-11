@@ -1,0 +1,47 @@
+.page-content {
+  background-color: #fff;
+  color: #303030;
+  padding: 95px 0 80px;
+}
+
+.services__list {
+  margin-bottom: 65px;
+}
+
+.service {
+  display: flex;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+.service:hover .service--button {
+  background-color: #F5170E;
+  color: #fff;
+}
+
+.service__img {
+  width: 41%;
+  margin-right: 4.3%;
+}
+
+.service__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.service__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+}
+
+.service__desc {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.service--button {
+  padding: 17px 40px;
+}

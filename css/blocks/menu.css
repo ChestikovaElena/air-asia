@@ -1,0 +1,28 @@
+.menu {
+  line-height: 3;
+}
+
+.menu__list {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.header--menu__list {
+  width: 265px;
+}
+
+.footer--menu__list {
+  width: 265px;
+}
+
+.menu__item--active .menu__link {
+  color: #F5170E;
+}
+
+.menu__link {
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  color: #F5170E;
+}

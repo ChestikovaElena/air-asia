@@ -1,0 +1,27 @@
+.top-line {
+  min-height: 415px;
+  background-color: #01131D;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+  background-image: url(../../img/bg/elephant_one.jpg);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+.top-line__container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-line__header {
+  padding-top: 30px
+}
+
+.page-title {
+  font-size: 72px;
+  line-height: 1.36;
+  font-weight: bold;
+}
