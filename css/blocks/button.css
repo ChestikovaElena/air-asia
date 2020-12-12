@@ -9,7 +9,6 @@
 }
 
 .button--type--primary {
-  margin-top: 10px;
   padding: 18px 40px;
   background-color: #F5170E;
   color: #fff;
@@ -20,7 +19,6 @@
 }
 
 .button--type--secondary {
-  margin-top: 15px;
   padding: 17px 30px;
   background-color: #fff;
   color: #F5170E;

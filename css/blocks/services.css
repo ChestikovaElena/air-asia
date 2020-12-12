@@ -42,6 +42,10 @@
   line-height: 1.7;
 }
 
+.service__button-wrapper {
+  margin-top: 15px;
+}
+
 .service--button {
   padding: 17px 40px;
 }

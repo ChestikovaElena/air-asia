@@ -62,7 +62,6 @@ body {
                     url(../../img/bg/sunset.jpg) center bottom no-repeat;
   background-color: #001821;
   overflow: hidden;
-  min-width: 1420px;
   min-height: 100%;
   display: flex;
   flex-direction: column;

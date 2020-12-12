@@ -1,6 +1,5 @@
 .footer--socials {
   width: 140px;
-  min-height: 20px;
   margin-right: 90px;
 }
 
@@ -8,10 +7,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.socials__item {
-  position: relative;
 }
 
 .socials__item:last-child {
@@ -24,7 +19,6 @@
   background: center center no-repeat;
   block-size: cover;
   border-radius: 50%;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
