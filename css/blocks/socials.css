@@ -1,6 +1,6 @@
 .footer--socials {
-  width: 140px;
-  margin-right: 90px;
+  width: 175px;
+  margin-right: 75px;
 }
 
 .socials__list {
@@ -17,11 +17,7 @@
   content: " ";
   display: block;
   background: center center no-repeat;
-  block-size: cover;
   border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 36px;
   height: 36px;
 }
