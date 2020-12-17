@@ -79,3 +79,8 @@ body {
   width: 1140px;
   margin: 0 auto;
 }
+
+.container--banner {
+  display: flex;
+  height: 100%;
+}

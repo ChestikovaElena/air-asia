@@ -8,6 +8,10 @@
   margin-top: 50px;
 }
 
+.reviews--pagination {
+  margin-top: 75px;
+}
+
 .pagination__display,
 .pagination__list {
   font-size: 16px;

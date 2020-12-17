@@ -9,14 +9,71 @@
   line-height: 1;
 }
 
+.workhours {
+  position: relative;
+}
+
 .contacts__workhours {
   font-size: 13px;
   align-self: flex-end;
 }
 
-.contacts__workhours:hover {
+.workhours__link {
+  text-decoration: none;
+}
+
+.workhours__content {
+  position: absolute;
+  left: -99999px;
+  top: 100%;
+  opacity: 0;
+  transition: opacity .3s;
+  background-color: #EDEDED;
+  color: #1E1F20;
+  font-weight: 600;
+  line-height: 1.6;
+  padding: 15px 20px;
+  border-radius: 9px;
+  min-width: 160px;
+  margin-top: 12px;
+}
+
+.workhours__content:before {
+ content: "";
+ display: block;
+ height: 20px;
+ left: 0;
+ right: 0;
+ top: -20px;
+ background-color: transparent;
+ position: absolute;
+}
+
+.workhours__content:after {
+  content: "";
+  border: 12px solid transparent;
+  width: 0;
+  height: 0;
+  border-bottom-color: #EDEDED;
+  border-top-width: 0;
+  position: absolute;
+  top: -12px;
+  left: 95px;
+}
+
+.workhours:hover .workhours__content {
+  left: -65px;
+  opacity: .8;
+}
+
+.workhours:hover .workhours__link {
   text-decoration: underline;
   cursor: pointer;
+  transition: .3s;
+}
+
+.workhours__item--font--bold {
+  font-weight: 700;
 }
 
 .contacts__text {

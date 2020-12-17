@@ -21,10 +21,6 @@
   align-items: center;
 }
 
-.footer__col--align--right {
-  align-items: flex-end;
-}
-
 .footer--services {
   padding-top: 48px;
   padding-bottom: 42px;
