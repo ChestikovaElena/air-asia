@@ -24,7 +24,7 @@
 
 .workhours__content {
   position: absolute;
-  left: -99999px;
+  right: -99999px;
   top: 100%;
   opacity: 0;
   transition: opacity .3s;
@@ -32,7 +32,7 @@
   color: #1E1F20;
   font-weight: 600;
   line-height: 1.6;
-  padding: 15px 20px;
+  padding: 15px 18px;
   border-radius: 9px;
   min-width: 160px;
   margin-top: 12px;
@@ -62,7 +62,7 @@
 }
 
 .workhours:hover .workhours__content {
-  left: -65px;
+  right: 0px;
   opacity: .8;
 }
 
