@@ -11,7 +11,7 @@
 .breadcrumbs__item:after {
   content: "/";
   color: #9A9A9A;
-  padding:0 5px;
+  padding: 0 5px;
 }
 
 .breadcrumbs__item:last-child:after {

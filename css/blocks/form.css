@@ -93,7 +93,7 @@
   cursor: pointer;
 }
 
-.controls__checkbox:checked ~ .controls__tag {
+.controls__checkbox:checked~.controls__tag {
   background-color: #B9EAE4;
 }
 

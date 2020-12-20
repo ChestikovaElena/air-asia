@@ -1,6 +1,6 @@
 .welcome {
   display: flex;
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   align-items: center;
@@ -10,10 +10,10 @@
   width: 100%;
 }
 
-.content{
+.content {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   opacity: 0;
   animation: appearance 1.1s ease-in;
   animation-fill-mode: forwards;

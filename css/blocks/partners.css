@@ -29,7 +29,8 @@
 }
 
 .partners__item:nth-child(4n) {
-  text-align: right;;
+  text-align: right;
+  ;
 }
 
 .partners__item:hover {

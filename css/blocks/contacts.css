@@ -39,14 +39,14 @@
 }
 
 .workhours__content:before {
- content: "";
- display: block;
- height: 20px;
- left: 0;
- right: 0;
- top: -20px;
- background-color: transparent;
- position: absolute;
+  content: "";
+  display: block;
+  height: 20px;
+  left: 0;
+  right: 0;
+  top: -20px;
+  background-color: transparent;
+  position: absolute;
 }
 
 .workhours__content:after {
